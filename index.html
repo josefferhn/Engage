@@ -3,12 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Engage - Home Page</title>
+<title>Home Page - Engage</title>
 <link href="img/favicon.png" rel="shortcut icon">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-custom.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+
+
+<!-- SEO -->
+<meta name="Description" content="Sitio de información de servicios y productos que ofrecemos para el desarrollo de agencias de publicidad en Honduras.">
+<meta name="Keywords" content="publicidad, publicidad en honduras, agencias de publicidad, agencias">
+<!-- Open Graph -->
+<meta property="og.title" content="Home Page - Engage">
+<meta property="og.url" content="https://josefferhn.github.io/Engage/">
+<meta property="og.description" content="Información de contacto para nuestro sitio, el dónde puedes enviarnos un mensaje o encontrar nuestra dirección para tu visista.">
+<meta property="og.image" content="https://josefferhn.github.io/Engage/img/logo-dark.png">
+
 </head>
 
 <body>
@@ -39,7 +50,7 @@
 					<a class="nav-link" href="#">Team</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
+					<a class="nav-link" href="contact.html">Contact</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link" href="#">Portfolio</a>
@@ -52,11 +63,51 @@
 		</div>
 	</header>
 	
-	<section id="hero">
+	<section id="hero" class="d-none">
 		<div class="container">
 			<h1>Welcome to Engage</h1>
 			<h3>This is an awesome, ease to user Hero Slider</h3>
 			<a href="#" class="btn btn-light">Learn More</a>
+		</div>
+	</section>
+	
+	<section id="hero-slides">
+		<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		  
+
+		  <div class="carousel-inner">
+			
+		  	<div class="carousel-item active">
+			  <img src="img/full-1.jpg" class="d-block w-100" alt="...">
+			  <div class="carousel-caption  d-md-block">
+				<h1>Welcome to Engage</h1>
+				<h3>Some representative placeholder content for the first slide.</h3>
+				<a href="#" class="btn btn-light">Learn more</a>
+			  </div>
+			</div>
+			
+			<div class="carousel-item">
+			  <img src="img/full-2.jpg" class="d-block w-100" alt="...">
+			  <div class="carousel-caption  d-md-block">
+				<h1>Welcome to Engage</h1>
+				<h3>Some representative placeholder content for the second slide.</h3>
+				<a href="#" class="btn btn-light">Learn more</a>
+			  </div>
+			</div>
+			
+			
+		  </div>
+		  
+		  <a class="carousel-control-prev" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		  </a>
+		  
+		  <a class="carousel-control-next" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		  </a>
+		  
 		</div>
 	</section>
 	
@@ -129,11 +180,76 @@
 	</section>
 	
 
+	<section id="services" class="section">
+		<div class="container">
+		
+			<div class="text-center">
+				<i class="far fa-star"></i>
+				<h2 class="titulo">Our Services</h2>
+				<h3 class="subtitulo">What we are great at.</h3>
+			</div>
+			
+			<div class="row mt-5">
+				<article class="col-lg-4 col-sm-12 col-12">
+					<div class="servicio">
+						<img src="img/square-2.jpg" class="img-fluid" alt="square">
+						<div class="overlay"></div>
+						<div class="servicio-texto">
+							<h4>Facilities</h4>
+						</div>						
+					</div>
+				</article>
+				
+				<article class="col-lg-4 col-sm-12 col-12">
+					<div class="servicio">
+						<img src="img/square-3.jpg" class="img-fluid" alt="square">
+						<div class="servicio-texto-oculto">
+							<h4>Facilities</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, molestias.</p>
+						</div>						
+					</div>
+				</article>
+				
+				<article class="col-lg-4 col-sm-12 col-12">
+					<div class="servicio imagen">
+						<img src="img/square-8.jpeg" class="img-fluid" alt="square">
+						<div class="servicio-texto-oculto">
+							<h4>Location</h4>
+							<a href="#"><i class="fas fa-external-link-alt"></i></a>
+						</div>
+						<div class="etiqueta">
+							Destacado
+						</div>						
+					</div>
+				</article>
+			</div>
+			
+		</div>
+	</section>
+	
 
+	<footer>
+		<div class="container">
+			<p>&copy; Copyright 2021. All rights reserved. - <b>Engage Diseño Web</b></p>
+		</div>
+	</footer>
+	
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-192021688-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-192021688-1');
+</script>
+
 
 </body>
 </html>
